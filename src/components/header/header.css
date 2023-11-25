@@ -1,0 +1,142 @@
+.container-header {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.img-header {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-components {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.logo-and-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.img-logo {
+  width: 10%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+  font: 600 15px "Montserrat-Bold", sans-serif;
+}
+
+.menu li a {
+  text-decoration: none; /* Asegurarse de que los enlaces no tengan ninguna decoración de texto */
+  color: black;
+}
+
+.menu a:hover {
+  color: #ffa500;
+}
+
+.text-header{
+  padding-top: 230px;
+  width: 40%;
+}
+.title-header{
+  font: 600 35px "Montserrat-Bold", sans-serif;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.text-header button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font: 600 18px "Montserrat-Bold", sans-serif;
+}
+.sub-title-header{
+  color: #fff;
+  font: 600 18px "Montserrat-Bold", sans-serif;
+}
+.paragraph-header{
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font: 600 14px "Montserrat-Bold", sans-serif;
+}
+.img-cut{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 400px;
+}
+
+/* Media queries para hacer el diseño responsivo */
+@media only screen and (max-width: 768px) {
+  .text-header {
+    width: 90%;
+  }
+
+  .img-logo {
+    width: 11%;
+    margin-bottom: 1px;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+
+  .menu a:hover {
+    color: #ffa500;
+  }
+  
+  .title-header {
+    font-size: 20px;
+    padding-bottom: 1px; /* Ajustar el espacio inferior del título */
+    margin-top: 1px; /* Ajustar el margen superior del título */
+  }
+
+  .text-header button {
+    font-size: 14px;
+  }
+
+  .sub-title-header,
+  .paragraph-header {
+    font-size: 12px;
+    padding-bottom: 1px; /* Ajustar el espacio inferior del subtítulo y el párrafo */
+    margin-top: 1px; /* Ajustar el margen superior del subtítulo y el párrafo */
+  }
+}

@@ -1,0 +1,319 @@
+.container-boddy {
+  max-width: 90%; /* Ajusta según sea necesario */
+  margin: auto;
+  overflow: hidden; /* Para ocultar las imágenes que están fuera del contenedor */
+}
+.title-body{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #ffa500;
+  font: 600 30px "Montserrat-Bold", sans-serif;
+}
+
+.paragraph-body{
+  font: 300 15px "Montserrat-Bold", sans-serif;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.carrucel {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Agrega una transición suave */
+}
+
+.carrucel img {
+  width: calc(100% / 3); /* Ajusta el ancho según sea necesario para mostrar tres imágenes */
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+  border-radius: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Alinear los botones al principio y al final */
+  margin-top: 10px;
+}
+
+button {
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color:black;
+}
+
+.title-body-services{
+  font: 600 30px "Montserrat-Bold", sans-serif;
+  padding-bottom: 2%;
+}
+.container-servicios-body {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para que los elementos estén uno encima del otro */
+  align-items: center; /* Centra los elementos horizontalmente en el eje transversal */
+}
+
+.container-custom-design,
+.container-Swimming-Pool-Construction,
+.container-Remodeling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 20px;
+}
+
+.text-container-custom-design,
+.text-container-Pool-Construction,
+.text-container-remodeling {
+  flex: 1; /* Para que ocupe el espacio restante en la fila */
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.sub-title-custom-design,
+.sub-title-Pool-Construction,
+.sub-title-remodeling {
+  font: 600 30px "Montserrat-Bold", sans-serif;
+  margin-bottom: 10px;
+  color: #ffa500;
+}
+
+/* Estilos para las imágenes */
+.img-custom-design,
+.img-pool-construction,
+.img-remodeling {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 40px;
+}
+
+.title-testimonials{
+  text-align: center;
+  font: 600 30px "Montserrat-Bold", sans-serif;
+  padding-bottom: 2%;
+}
+.body-testimonials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: stretch;
+}
+
+.testimonials-card-1 {
+  width: 43%;
+  margin: 10px;
+  padding: 20px; /* Ajustado el padding para que ambos tengan el mismo espacio interno */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 166, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials-card-2 {
+  width: 43%;
+  margin: 10px;
+  padding: 20px; /* Ajustado el padding para que ambos tengan el mismo espacio interno */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 166, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para las imágenes de los testimonios */
+.img-testimonial-1,
+.img-testimonial-2 {
+  width: 40%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos de los testimonios */
+.title-testimonial-1,
+.title-testimonial-2 {
+  font: 600 20px "Montserrat-Bold", sans-serif;
+  margin-bottom: 10px;
+  color: #ffa600;
+}
+
+/* Estilos para los contenedores de texto de los testimonios */
+.container-text-testimonial-1,
+.container-text-testimonial-2 {
+  flex: 1;
+  text-align: center;
+}
+
+/* Estilos para los párrafos de los testimonios */
+.container-text-testimonial-1 p,
+.container-text-testimonial-2 p {
+  font: 400 12px "Montserrat-Bold", sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+}
+.title-form-user{
+  font: 600 30px "Montserrat-Bold", sans-serif;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.sub-title-form-user{
+  color: #ffa600;
+  font: 600 20px "Montserrat-Bold", sans-serif;
+  padding-bottom: 2%;
+}
+.form-user {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 2%;
+}
+
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form button {
+  background-color: #ffa600;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color:black;
+}
+
+@media only screen and (max-width: 768px) {
+  .carrucel img {
+    margin-right: 2%; /* Eliminado el margen entre las imágenes en dispositivos más pequeños */
+  }
+
+  .button-container {
+    flex-direction: row; /* Cambiado a fila para mostrar los botones uno al lado del otro */
+    align-items: center;
+  }
+  
+.button:hover {
+  background-color:black;
+}
+  button {
+    margin-bottom: 10px; /* Ajustado el margen inferior para dispositivos más pequeños */
+  }
+
+  .container-custom-design,
+  .container-Swimming-Pool-Construction,
+  .container-Remodeling {
+    max-width: 100%; /* Ajustado para que se ajuste correctamente en dispositivos más pequeños */
+    margin: 10px; /* Ajustado el margen para dispositivos más pequeños */
+    padding-bottom: 5%;
+  }
+
+  .sub-title-custom-design,
+  .sub-title-Pool-Construction,
+  .sub-title-remodeling {
+    font-size: 18px; /* Ajustado el tamaño del título para dispositivos más pequeños */
+  }
+
+  .img-custom-design,
+  .img-pool-construction,
+  .img-remodeling {
+    width: 40%;
+    max-width: 100%; /* Ajustado para que las imágenes se ajusten correctamente en dispositivos más pequeños */
+    height: auto;
+    border-radius: 40px;
+  }
+  .paragraph-custom-design,
+  .paragraph-pool-construction,
+  .paragraph-remodeling {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+
+  .testimonials-card-1,
+  .testimonials-card-2 {
+    width: 100%; /* Ajustado para que los cards ocupen el ancho completo en dispositivos más pequeños */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 166, 0, 1);
+  }
+
+  .img-testimonial-1,
+  .img-testimonial-2 {
+    width: 70%; /* Ajustado el tamaño de las imágenes para dispositivos más pequeños */
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .title-testimonial-1,
+  .title-testimonial-2 {
+    font-size: 18px; /* Ajustado el tamaño del título para dispositivos más pequeños */
+  }
+
+  .container-text-testimonial-1,
+  .container-text-testimonial-2 {
+    text-align: center;
+  }
+
+  .container-text-testimonial-1 p,
+  .container-text-testimonial-2 p {
+    font-size: 14px; /* Ajustado el tamaño del párrafo para dispositivos más pequeños */
+  }
+
+  .title-form-user {
+    font-size: 24px; /* Ajustado el tamaño del título para dispositivos más pequeños */
+  }
+
+  .sub-title-form-user {
+    font-size: 16px; /* Ajustado el tamaño del subtítulo para dispositivos más pequeños */
+  }
+
+  .form-user {
+    max-width: 100%; /* Ajustado para que se ajuste correctamente en dispositivos más pequeños */
+    margin: 10px; /* Ajustado el margen para dispositivos más pequeños */
+    padding: 10px; /* Ajustado el padding para dispositivos más pequeños */
+  }
+
+  .form input {
+    margin-bottom: 10px; /* Ajustado el margen inferior para dispositivos más pequeños */
+  }
+
+  .form button {
+    font-size: 14px; /* Ajustado el tamaño del botón para dispositivos más pequeños */
+  }
+}
